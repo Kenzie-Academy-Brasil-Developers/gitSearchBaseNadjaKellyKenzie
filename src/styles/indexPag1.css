@@ -1,0 +1,54 @@
+.base__page-title{
+background-color: var(--color-brand-1);
+color: var(--color-grey-7);
+font-family: var(--font-primary);
+padding: 4.4375rem;
+
+}
+
+.form__pag{
+display: flex;
+font-family: var(--font-primary);
+color: var(--color-grey-7);
+background-color: var(--color-grey-2);
+padding: 4.1875rem;
+}
+
+
+.form__pag-style{
+    display: flex;
+    gap: 1.1875rem;
+    flex-direction: column;
+    margin-top: 2.625rem;
+}
+
+input{
+    background-color: var(--color-grey-1);
+    border-radius: .25rem;
+    padding: .375rem;
+    border: 1px solid var( --color-grey-6);
+    outline: none;
+    color: var(--color-grey-7);
+}
+
+#error{
+    display: none;
+    font-size: .625rem;
+    margin-top: -0.9375rem;
+    background: var(--color-brand-1);
+    width: 4.75rem;
+    margin-left: 10.75rem;
+    border-radius: 3px;
+    padding: .3125rem;
+}
+
+
+
+button{
+    background-color: var(--color-brand-1);
+    color: var(--color-grey-7);
+    border-radius: .25rem;
+    padding: .375rem;
+    border: 1px;
+
+}

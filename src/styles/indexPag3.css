@@ -1,0 +1,62 @@
+body {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    flex-direction: column;
+    font-family: var(--font-primary);
+    background-color: var(--color-grey-2);
+    gap: 10px;
+    margin: 0;
+}
+
+
+.text {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 22px;
+}
+
+h1 {
+    color: var(--color-grey-7);
+    text-align: center;
+    margin-top: 50px;
+}
+
+p {
+    color: var(--color-grey-7);
+    text-align: center;
+}
+
+button {
+    width: 18.75rem;
+    height: 35px;
+    border: 1px;
+    color: var(--color-grey-7);
+    font-weight: bold;
+    border-radius: 4px;
+    background-color: var(--color-brand-1);
+}
+
+.img__src {
+    margin-left: 110px;
+    width: 265px;
+    height: 245px;
+    margin-top: 27px;
+    display: flex;
+    justify-content: center;
+    width: 135px;
+    
+}
+
+img {
+    width: 14.0625rem;
+    height: 14.0625rem;
+    border-radius: 8px;
+    background-color: var(--color-alert);
+    color: var(--color-grey-7);
+    -webkit-box-shadow: 18px 20px 0px 1px rgb(255, 255, 255);
+    -moz-box-shadow: 18px 20px 0px 1px rgb(255, 255, 255);
+    box-shadow: 18px 20px 0px 1px rgb(255, 255, 255);
+}

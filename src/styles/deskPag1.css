@@ -1,0 +1,83 @@
+@media (min-width: 736px) {
+    .base__pag {
+        display: flex;
+        height: 100vh;
+    }
+
+    .base__page-title {
+        width: 50%;
+        align-items: flex-end;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: initial;
+    }
+
+
+    .form__pag {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        margin-top: 4.375rem;
+        font-size: 22px;
+    }
+
+    h3 {
+        font-size: 30px;
+    }
+
+    .form__pag-style p {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 20px;
+        line-height: 1.5em;
+    }
+
+    .form__pag-style {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: -0.75rem;
+        padding: 1.75rem 0rem;
+    }
+
+    input {
+        margin-top: -9px;
+        border-radius: 2px;
+        font-size: 8px;
+        width: 20.625rem;
+        height: 25px;
+        font-size: 17px;
+        border-radius: 5px;
+    }
+
+    #error {
+        margin-top: -16px;
+        width: 74px;
+        margin-left: 248px;
+        border-radius: 4px;
+        padding: 8px;
+    }
+
+
+    button {
+        margin-top: 17px;
+        width: 21.625rem;
+        height: 40px;
+        font-size: 17px;
+        border-radius: 5px;
+    }
+
+}
