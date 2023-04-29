@@ -8,31 +8,31 @@ export const loginsAll = async (valuex) => {
         })
 
         if(allUser.status == 200){
-            const response = await allUser.json()
-            localStorage.setItem('user', JSON.stringify(response))
-            window.location.replace('./src/pages/profile.html')
-            return response
+            const response = await allUser.json();
+            localStorage.setItem('user', JSON.stringify(response));
+            window.location.replace('./src/pages/profile.html');
+            return response;
         }
         else{
-            window.location.replace('./src/pages/error.html')
+            window.location.replace('./src/pages/error.html');
         }
     } catch (error) {
-        console.log(error)
+        console.log(error);
     }
     
 }
 
 export async function inputValues (){
-    const button = document.querySelector('.buttonForm')
+    const button = document.querySelector('.buttonForm');
     button.addEventListener('click', async (event) => { 
         event.preventDefault()
-        const input = document.querySelector('#userName')
-        const value = input.value
-        const data = await loginsAll(value)
-        return data
+        const input = document.querySelector('#userName');
+        const value = input.value;
+        const data = await loginsAll(value);
+        return data;
     } ) 
 }
-inputValues()
+inputValues();
 
 function errorCaracter(){
     const input = document.querySelector('#userName');
@@ -46,7 +46,7 @@ function errorCaracter(){
       }
     });
 
-  }
+  };
 
-  errorCaracter()
+  errorCaracter();
 

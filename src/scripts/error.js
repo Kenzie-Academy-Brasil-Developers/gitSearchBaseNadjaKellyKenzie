@@ -1,8 +1,8 @@
 const error = () => {
-    const button = document.querySelector('.buttonError')
+    const button = document.querySelector('.buttonError');
     button.addEventListener('click', () =>{
-        window.location.replace('../../index.html')
+        window.location.replace('../../index.html');
     })
 }
 
-error()
+error();

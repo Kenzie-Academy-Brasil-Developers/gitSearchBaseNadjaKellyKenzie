@@ -1,5 +1,5 @@
-export const user = JSON.parse(localStorage.getItem('user'))
-console.log(user)
+export const user = JSON.parse(localStorage.getItem('user'));
+console.log(user);
 
 export const repositorio = async () => {
     try{
@@ -15,10 +15,11 @@ export const repositorio = async () => {
         
     }
     
-}
+};
 
 function renderHeader(){
     const header = document.querySelector('header');
+    header.classList.add('header__div')
 
     const div = document.createElement('div');
     div.classList.add('user__pag-conect');
@@ -36,7 +37,7 @@ function renderHeader(){
     buttonHeader.innerText = 'Trocar de usuário'
     buttonHeader.classList.add('user__button-header');
     buttonHeader.addEventListener('click', () => {
-        window.location.replace('../../index.html')
+        window.location.replace('../../index.html');
     });
 
     divButton.appendChild(buttonHeader);
@@ -44,37 +45,37 @@ function renderHeader(){
     header.append(div,divButton);
 }
 
-renderHeader()
+renderHeader();
 
 
 
 async function renderProject(){
-    const data = await repositorio()
+    const data = await repositorio();
 
 
-    const ul = document.querySelector('.render')
+    const ul = document.querySelector('.render');
     data.forEach(element => {
         
-        const li = document.createElement('li')
-        li.classList.add('list')
+        const li = document.createElement('li');
+        li.classList.add('list');
 
-        const nameProject = document.createElement('h3')
-        nameProject.innerText = element.name
+        const nameProject = document.createElement('h3');
+        nameProject.innerText = element.name;
 
-        const descriptionProject = document.createElement('p')
-        descriptionProject.innerText = element.description
+        const descriptionProject = document.createElement('p');
+        descriptionProject.classList.add('pLimit');
+        descriptionProject.innerText = element.description;
 
-        const ancoraRep = document.createElement('a')
-        ancoraRep.href = element.url
-        ancoraRep.target = '_blank'
-        ancoraRep.innerText = 'Repositório'
+        const ancoraRep = document.createElement('a');
+        ancoraRep.href = element.url;
+        ancoraRep.target = '_blank';
+        ancoraRep.innerText = 'Repositório';
 
-        li.append(nameProject,descriptionProject,ancoraRep)
+        li.append(nameProject,descriptionProject,ancoraRep);
         ul.append(li)
 
     });
-
     
 }
 
-renderProject ()
+renderProject ();
