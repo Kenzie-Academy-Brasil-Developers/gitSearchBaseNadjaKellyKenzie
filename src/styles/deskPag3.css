@@ -47,3 +47,23 @@
         height: 2.875rem;
     }
 }
+
+
+@keyframes slide-in{
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+
+.text{
+    margin-bottom: 24px;
+    animation: slide-in 1s ease-out forwards;
+ }
+
+.img__src{
+    margin-bottom: 24px;
+    animation: slide-in 1s ease-out forwards;
+ }

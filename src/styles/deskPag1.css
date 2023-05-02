@@ -82,3 +82,24 @@
     }
 
 }
+
+
+@keyframes slide-in {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+
+.base__page-title h1 {
+    font-weight: 800;
+    margin-bottom: 24px;
+    animation: slide-in 1s ease-out forwards;
+}
+
+.base__page-title p {
+    margin-bottom: 24px;
+    animation: slide-in 1s ease-out forwards;
+}
